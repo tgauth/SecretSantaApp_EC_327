@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:measureWithLargestChild="false"
+    android:longClickable="false">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/step1"
+        android:src="@drawable/step1"
+        android:background="#8e8585"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#8e8585">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter Group Name:"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/step1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center_horizontal"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:textSize="40dp"
+            android:textColor="#257c21" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=" "
+            android:ems="10"
+            android:id="@+id/groupName"
+            android:background="#8e8585"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView3"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#8e8585"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Number of Guests:"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="66dp"
+            android:layout_below="@+id/groupName"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:textColor="#257c21"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:layout_weight="1.77" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/numberOfGuests"
+            android:hint=" "
+            android:background="#8e8585"
+            android:layout_gravity="bottom"
+            android:width="150dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:background="#8e8585">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextbutton2"
+            android:src="@drawable/nstep"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:onClick="moveToContactPage"
+            android:layout_gravity="center"
+            android:background="#8e8585" />
+    </LinearLayout>
+
+</LinearLayout>

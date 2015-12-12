@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.vic.secretsantarev3.meeting_page"
+    android:background="@drawable/snowflake">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/stres" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter the Plans!"
+        android:id="@+id/textView5"
+        android:textColor="#000000"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/nextButton4"
+        android:layout_alignStart="@+id/nextButton4"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Place:"
+        android:id="@+id/textView12"
+        android:textColor="#257c21"
+        android:layout_below="@+id/textView5"
+        android:layout_alignRight="@+id/textView13"
+        android:layout_alignEnd="@+id/textView13" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/meetingPlace"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:layout_alignTop="@+id/meetingPlace"
+        android:layout_alignBottom="@+id/meetingPlace"
+        android:layout_toLeftOf="@+id/meetingPlace"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:cropToPadding="false"
+        android:src="@drawable/ornament" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date:"
+        android:id="@+id/textView13"
+        android:textColor="#257c21"
+        android:layout_below="@+id/meetingPlace"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/dateOfEvent"
+        android:layout_below="@+id/textView13"
+        android:layout_alignEnd="@+id/meetingPlace" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignTop="@+id/dateOfEvent"
+        android:layout_alignBottom="@+id/dateOfEvent"
+        android:layout_toLeftOf="@+id/dateOfEvent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:cropToPadding="false"
+        android:src="@drawable/ornament" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time:"
+        android:id="@+id/textView14"
+        android:textColor="#257c21"
+        android:layout_below="@+id/dateOfEvent"
+        android:layout_alignEnd="@+id/textView13" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:id="@+id/timeOfEvent"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView14"
+        android:ems="2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_alignTop="@+id/timeOfEvent"
+        android:layout_alignBottom="@+id/timeOfEvent"
+        android:layout_toLeftOf="@+id/timeOfEvent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:cropToPadding="false"
+        android:src="@drawable/ornament" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextButton4"
+        android:src="@drawable/nstep"
+        android:layout_marginTop="475dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="moveToFinalPage"
+        android:background="@null" />
+
+</RelativeLayout>
